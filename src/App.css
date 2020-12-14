@@ -34,8 +34,22 @@
   min-height: 100vh;
 }
 
+.welcome-cont {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
 .welcome-img {
   min-width: 100%;
   max-width: 100%;
   display: block;
+}
+
+.welcome-head {
+  font-size:150px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
