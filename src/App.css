@@ -72,3 +72,30 @@
 .course-box:hover {
   background-color:lightskyblue;
 }
+
+.info-cont {
+  display: flex;
+  justify-content: center;
+  background-color: white;
+  position: absolute;
+  top: 20%;
+  align-content: center;
+  width: 40%;
+  padding: 20px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.course {
+  color:#282c34;
+}
+
+.close {
+  color: black;
+  float: right;
+}
+
+.close:hover {
+  color:red;
+  cursor: pointer;
+}
