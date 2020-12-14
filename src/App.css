@@ -53,3 +53,22 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.courses {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.course-box {
+  overflow-wrap: break-word;
+  background-color: rgb(138, 138, 138);
+  padding: 30px 15px 30px 15px;
+  border-radius: 5px;
+  border-style: outset;
+}
+
+.course-box:hover {
+  background-color:lightskyblue;
+}
