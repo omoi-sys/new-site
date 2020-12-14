@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+// Main logic was referenced from https://medium.com/@daniela.sandoval/creating-a-popup-window-using-js-and-react-4c4bd125da57
+
 export default class Popup extends Component {
   classClick = () => {
       this.props.toggle();
