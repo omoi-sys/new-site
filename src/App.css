@@ -21,3 +21,21 @@
 .App-link {
   color: #61dafb;
 }
+
+.para {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.container {
+  padding-left: 0px;
+  padding-right: 0px;
+  background-color: dimgray;
+  min-height: 100vh;
+}
+
+.welcome-img {
+  min-width: 100%;
+  max-width: 100%;
+  display: block;
+}
