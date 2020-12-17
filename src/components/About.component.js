@@ -1,10 +1,27 @@
 import React, { Component } from 'react';
-import Popup from './Popup.component';
+import axios from 'axios';
+
+//let courses_loaded = []
 
 export default class About extends Component {
   state = {
-      seen: false
-  };
+      seen: false,
+      courses: [],
+  }
+
+  componentDidMount() {
+    axios.get('http://localhost:8000/').then(
+      res => {
+        const courses = res.data;
+        this.setState({courses});
+        console.log(courses);
+      }).catch(
+        err => {
+        console.log('Error: ' + err);
+      }
+    )
+  }
+  
 
   togglePop = () => {
     this.setState({
@@ -24,37 +41,11 @@ export default class About extends Component {
           As of December 2020, I've completed 44 units and only hvae 4 courses left to graduate. The cources that I've completed thus far are:
         </p>
         <div className='courses'>
-          <div className='course-box' onClick={this.togglePop}>
-            Accelerated Intro to Computer Science
-          </div>
-          {this.state.seen ? <Popup toggle={this.togglePop} />: null}
-          <div className='course-box' onClick={this.togglePop}>
-            Discrete Structures in Computer Science
-          </div>
-          <div className='course-box' onClick={this.togglePop}>
-            Computer Architecture and Assembly Language
-          </div>
-          <div className='course-box' onClick={this.togglePop}>
-            Data Structures
-          </div>
-          <div className='course-box' onClick={this.togglePop}>
-            Analysis of Algorithms
-          </div>
-          <div className='course-box' onClick={this.togglePop}>
-            Web Development
-          </div>
-          <div className='course-box' onClick={this.togglePop}>
-            Intro to Databases
-          </div>
-          <div className='course-box' onClick={this.togglePop}>
-            Intro to Parallel Programming
-          </div>
-          <div className='course-box' onClick={this.togglePop}>
-            Operating Systems I
-          </div>
-          <div className='course-box' onClick={this.togglePop}>
-            Intro to Computer Networks
-          </div>
+          {this.state.courses.map(course => 
+            <div className='course-box' key={course._id} onClick={this.togglePop}>
+              {course.name}
+            </div>
+          )}
         </div>
       </section>
     </div>
