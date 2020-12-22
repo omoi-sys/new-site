@@ -5,9 +5,9 @@ export default class Projects extends Component {
     return (
       <div className='projects'>
         This page is to describe projects done throughout my time in the CS program.
-        <dl>
+        <dl className='para'>
           <dt><a href='https://omoi-sys.github.io/personal-old/' target='_blank'>Portfolio Website</a></dt>
-          <dd>- A simple static front-end personal website that 
+          <dd>A simple static front-end personal website that 
             utilizes HTML, CSS, and JavaScript. While most of 
             the website is just made up of HTML and CSS, one 
             section (Weather) uses JavaScript and AJAX calls to 
@@ -21,7 +21,12 @@ export default class Projects extends Component {
             there's also no need to refresh to do more queries.</dd>
           <dt><a href='https://github.com/omoi-sys/smallsh' target='_blank'>smallsh</a></dt>
           <dd>
-            
+            A simple shell with limited functionality. Makes use of
+            exec() to make system calls for the inputed commands 
+            such as echo, cat, ps. When a command is inputed, a child
+            process is created using fork() that then runs the command
+            if it's valid, just like a shell with more functionality such
+            as bash. There is also a foreground-only mode in which & is ingored.
           </dd>
         </dl>
       </div>
