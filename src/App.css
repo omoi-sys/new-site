@@ -1,3 +1,5 @@
+html,body { height: 100%; }
+
 .App {
   text-align: center;
   background-color: #282c34;
@@ -30,7 +32,7 @@
 .container {
   padding-left: 0px;
   padding-right: 0px;
-  background-color: dimgray;
+  background-color: rgb(61, 26, 26);
   min-height: 100vh;
 }
 
@@ -38,6 +40,7 @@
   position: relative;
   text-align: center;
   color: white;
+  margin-top: -24px;
 }
 
 .welcome-img {
@@ -47,7 +50,7 @@
 }
 
 .welcome-head {
-  font-size:150px;
+  font-size: 600%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -63,7 +66,7 @@
 
 .course-box {
   overflow-wrap: break-word;
-  background-color: rgb(138, 138, 138);
+  background-color: rgb(63, 170, 108);
   padding: 30px 15px 30px 15px;
   border-radius: 5px;
   border-style: outset;
@@ -71,19 +74,6 @@
 
 .course-box:hover {
   background-color:lightskyblue;
-}
-
-.info-cont {
-  display: flex;
-  justify-content: center;
-  background-color: white;
-  position: absolute;
-  top: 20%;
-  align-content: center;
-  width: 40%;
-  padding: 20px;
-  border-radius: 5px;
-  border: 2px solid black;
 }
 
 .course {
