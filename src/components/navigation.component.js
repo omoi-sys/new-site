@@ -8,13 +8,13 @@ export default class Nav extends Component {
         <div className='navbar-collapse'>
         <ul className='navbar-nav mr-auto'>
           <li className='navbar-item'>
-            <Link to='/' className='nav-link'>Home</Link>
+            <Link to='/new-site/' className='nav-link'>Home</Link>
           </li>
           <li className='navbar-item'>
-            <Link to='/about' className='nav-link'>About</Link>
+            <Link to='/new-site/about' className='nav-link'>About</Link>
           </li>
           <li className='navbar-item'>
-            <Link to='/projects' className='nav-link'>Projects</Link>
+            <Link to='/new-site/projects' className='nav-link'>Projects</Link>
           </li>
         </ul>
         </div>
