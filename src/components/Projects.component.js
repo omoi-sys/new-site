@@ -30,7 +30,13 @@ export default class Projects extends Component {
           </dd>
           <dt>This React Website</dt>
           <dd>
-          
+            A ReactJS multi-page website which additionally makes use
+            of bootstrap. It connects to a remote MongoDB database 
+            with the help of an Express back-end API. It is the latest
+            iteration of my original persongal website from my Web
+            Development course. The intention is also to serve not just
+            as a personal site, but also as a training ground for myself
+            in developing web applications.
           </dd>
         </dl>
       </div>
