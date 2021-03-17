@@ -30,7 +30,22 @@ export default class Projects extends Component {
           </dd>
           <dt>This React Website</dt>
           <dd>
-          
+            A ReactJS multi-page website which additionally makes use
+            of bootstrap. It connects to a remote MongoDB database 
+            with the help of an Express back-end API. It is the latest
+            iteration of my original persongal website from my Web
+            Development course. The intention is also to serve not just
+            as a personal site, but also as a training ground for myself
+            in developing web applications.
+          </dd>
+          <dt><a href='https://github.com/omoi-sys/kanji-cards' targer='_blank'>Kanji Cards</a></dt>
+          <dd>
+            Currently under development personal project. A flash card web app for studying 
+            Kanji (Chinese characters) used in the Japanese language. Objective
+            is to help focus on practicing with kanji already learned
+            through university courses as well as continue further study beyond
+            academic history. Frontend built with ReactJS, back-end kanji
+            database built using Flask and a MongoDB database.
           </dd>
         </dl>
       </div>
