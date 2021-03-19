@@ -17,7 +17,7 @@ function App() {
         <br />
         <Route path='/new-site/' exact component={Home} />
         <Route path='/new-site/about' component={About} />
-        <Route path='/new-site/projects' component={Projects} />
+        <Route exact path='/new-site/projects' component={Projects} />
       </div>
       </Router>
     </div>
