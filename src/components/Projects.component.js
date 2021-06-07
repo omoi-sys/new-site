@@ -6,6 +6,10 @@ export default class Projects extends Component {
       <div className='projects'>
         This page is to describe projects done throughout my time in the CS program.
         <dl className='para'>
+          <dt><a href='https://github.com/omoi-sys/cloud-portfolio-project' target='_blank'></a>Cloud Portfolio Project REST API</dt>
+          <dd>
+            A REST API built for deployment on Google Cloud's App Engine platform. Developed with ExpressJS for the back-end and Express-Handlebars for the front-end.
+          </dd>
           <dt><a href='https://omoi-sys.github.io/personal-old/' target='_blank'>Portfolio Website</a></dt>
           <dd>A simple static front-end personal website that 
             utilizes HTML, CSS, and JavaScript. While most of 
