@@ -8,7 +8,7 @@ export default class About extends Component {
   }
 
   componentDidMount() {
-    axios.get('https://omoi-sys.com:8000/').then(
+    axios.get('http://omoi-sys.com:8000/').then(
       res => {
         const courses = res.data;
         this.setState({courses});
@@ -33,20 +33,25 @@ export default class About extends Component {
       <h3>About</h3>
       <section>
         <p className='para'>
-          Hi, my name is Abraham. I am a Postbacc Computer Science student at Oregon State University. In this program students are able to earn a second bachelor's degree after completing 60 units, all of which are earned from CS courses.
+          Hi, my name is Abraham. I am a recent graduate of Oregon State University's Postbacc Computer Science program. In this program students are able to earn a second bachelor's degree after completing 60 units worth of computer science courses which cover a range of topics such as data structures, algorithms, operating systems, web applications, and more.
         </p>
         <p className='para'>
-          As of December 2020, I've completed 44 units and only need 4 courses to graduate, namely Software Engineering I and II, the Online Capstone, and an elective for which I plan to enroll in the Cloud Application Development. The cources that I've completed thus far are:
+          I completed my degree in June 2021, with my final two classes being the online capstone project, a course specifically tailored towards groups a mostly hands-off experience of developing an application from start to finish, and the cloud application development course, where we learned about REST API development and deployment on Google Cloud with the use of App Engine as well as other cloud features such as OAuth 2.0 and container deployment.
+        </p>
+        <p>
+          The courses I registered in while completing my degree were:
         </p>
         <div className='courses'>
-          {this.state.courses.map(course => 
-            <div className='course-box' key={course._id} onClick={this.togglePop}>
+          <tr>
+            {this.state.courses.map(course => 
+            <td className='course-box' key={course._id} onClick={this.togglePop}>
               {course.name}
-            </div>
+            </td>
           )}
+          </tr>
         </div>
         <p className='para'>
-          Over the past twenty months I've been able to grow a great deal in various areas of Computer Science as well as gain confidence in my skill as a future engineer. I come originally from the discipline of Physics, even if admitedly I did not do so well on it, so seeing a different perspective to go about problem solving has been a very rewarding experience. 
+          Over the course of two years I've been able to grow a great deal in various areas of Computer Science as well as gain confidence in my skills as a future engineer. I originally come from the discipline of Physics so seeing a different perspective for undertaking problem solving has been a very rewarding experience. I very much look forward to future endeavors. 
         </p>
       </section>
     </div>
