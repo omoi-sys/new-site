@@ -12,3 +12,7 @@ if (process.env.NODE_ENV === 'production') {
     res.sendFile(path.join('build', 'index.html'));
   });
 }
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join('build', 'index.html'));
+});
