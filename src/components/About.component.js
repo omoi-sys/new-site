@@ -8,7 +8,7 @@ export default class About extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://omoi-sys.com:8000/').then(
+    axios.get('https://omoi-sys-309518.wl.r.appspot.com/').then(
       res => {
         const courses = res.data;
         this.setState({courses});
