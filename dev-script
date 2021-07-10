@@ -1,0 +1,5 @@
+#!/bin/bash
+
+npm run build
+cp server.js build
+node build/server.js

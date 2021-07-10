@@ -41,14 +41,17 @@ export default class About extends Component {
         <p>
           The courses I registered in while completing my degree were:
         </p>
-        <div className='courses'>
-          <tr>
+        <div className="d-flex justify-content-sm-around align-content-center flex-wrap">
             {this.state.courses.map(course => 
-            <td className='course-box' key={course._id} onClick={this.togglePop}>
-              {course.name}
-            </td>
+            <div className='card text-white bg-secondary mb-3' key={course._id} onClick={this.togglePop}>
+              <div className="card-header">
+                <h5 className="card-title">{course.name}</h5>
+              </div>
+              <div className="card-body">
+                <p className="card-text">{course.description}</p>
+              </div>
+            </div>
           )}
-          </tr>
         </div>
         <p className='para'>
           Over the course of two years I've been able to grow a great deal in various areas of Computer Science as well as gain confidence in my skills as a future engineer. I originally come from the discipline of Physics so seeing a different perspective for undertaking problem solving has been a very rewarding experience. I very much look forward to future endeavors. 

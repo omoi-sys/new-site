@@ -57,35 +57,6 @@ html,body { height: 100%; }
   transform: translate(-50%, -50%);
 }
 
-.courses {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: stretch;
-}
-
-.course-box {
-  overflow-wrap: break-word;
-  background-color: rgb(63, 170, 108);
-  padding: 30px 15px 30px 15px;
-  border-radius: 5px;
-  border-style: outset;
-}
-
-.course-box:hover {
-  background-color:lightskyblue;
-}
-
-.course {
-  color:#282c34;
-}
-
-.close {
-  color: black;
-  float: right;
-}
-
-.close:hover {
-  color:red;
-  cursor: pointer;
+.card {
+  max-width: 22rem;
 }
