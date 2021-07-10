@@ -12,20 +12,12 @@ export default class About extends Component {
       res => {
         const courses = res.data;
         this.setState({courses});
-        console.log(courses);
       }).catch(
         err => {
         console.log('Error: ' + err);
       }
     )
   }
-  
-
-  togglePop = () => {
-    this.setState({
-      seen: !this.state.seen
-    });
-  };
 
   render() {
   return (
@@ -39,11 +31,11 @@ export default class About extends Component {
           I completed my degree in June 2021, with my final two classes being the online capstone project, a course specifically tailored towards groups a mostly hands-off experience of developing an application from start to finish, and the cloud application development course, where we learned about REST API development and deployment on Google Cloud with the use of App Engine as well as other cloud features such as OAuth 2.0 and container deployment.
         </p>
         <p>
-          The courses I registered in while completing my degree were:
+          The curriculum I underwent while completing my degree was:
         </p>
         <div className="d-flex justify-content-sm-around align-content-center flex-wrap">
             {this.state.courses.map(course => 
-            <div className='card text-white bg-secondary mb-3' key={course._id} onClick={this.togglePop}>
+            <div className='card text-white bg-secondary mb-3'>
               <div className="card-header">
                 <h5 className="card-title">{course.name}</h5>
               </div>
