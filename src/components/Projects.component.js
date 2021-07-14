@@ -27,7 +27,7 @@ export default class Projects extends Component {
             </div>
             <div className='card-body'>
               <div className='card-text'>
-                Group capstone project.
+                Group capstone project. A browser tower defense game developed with the Phaser 3 JavaScript framework. Live sample deployed on Heroku.
               </div>
             </div>
             <div className='card-footer'>
@@ -68,7 +68,7 @@ export default class Projects extends Component {
             </div>
             <div className='card-body'>
               <div className='card-text'>
-                Simple static front-end personal website that utilizes HTML, CSS, and JavaSCript. While most of the website is made up of HTML and CSS only, one seciont (Weather) uses JavaScript and AJAX calls to request information from the Open Weather Map API about the weather in the inputed city. This section was added originall to meet a requirement of the site needing a scroll box in one page. Rather than just add simple text, I decided to re-implement a previous API activity on the side as well and simple showcase the JS code fro those AJAX calls in the scroll box. By utilizing AJAX there's also no need to refresh to do more queries.
+                Simple static front-end personal website that utilizes HTML, CSS, and JavaSCript. While most of the website is made up of HTML and CSS only, one seciont (Weather) uses JavaScript and AJAX calls to request information from the Open Weather Map API about the weather in the inputed city.
               </div>
             </div>
             <div className='card-footer'>
